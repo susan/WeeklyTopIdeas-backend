@@ -1,4 +1,4 @@
 class LineItem < ApplicationRecord
-  belongs_to :book
+	belongs_to :report
   belongs_to :cart
 end

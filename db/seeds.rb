@@ -4,6 +4,101 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#
+
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
-Book.destroy_all
+Report.destroy_all
+
+Report.create(
+title: "Bluelinx Holdings Inc com",
+image: "image/Bluelinx.jpg",
+description: "Selling by legacy PE owner means opportunity to buy with 100% upside.",
+pricing_details: "LONG",
+recent_price: 15.79,
+target_price: 20.00
+	)
+
+Report.create(
+title: "Charter Communications Inc A",
+image: "image/Charter.jpg",
+description: "Misunderstanding of profit drivers creates big opportunity to buy at attractive price",
+pricing_details: "LONG",
+recent_price: 341.20,
+target_price: 540.00
+	)
+
+Report.create(
+ title: "Viad Corp",
+ image: "image/Viad.jpg",
+ description: "Viad is a combination of of two unrelated units with 100% upside within 2 years" ,
+ pricing_details: "LONG",
+ recent_price: 55.95,
+ target_price: 110.00
+ 	)
+
+Report.create(
+ title: "On the Beach Group plc",
+ image: "image/On The Beach jpg",
+ description: "Operating in a growing market against inefficicent competitors",
+ pricing_details: "LONG",
+ recent_price: 386.00,
+ target_price: 550.00
+ 	)
+
+Report.create(
+ title: "Tesaro Inc Com",
+ image: "image/Tesaro Inc.jpg",
+ description: "Trading at 45% discount to conservatively arrived at Takeout Value",
+ pricing_details: "LONG",
+ recent_price: 43.01,
+ target_price: 75.00
+ 	)
+Report.create(
+ title: "Liberty Tax Inc",
+ image: "image/Liberty Tax.jpg",
+ description: "Re-listing coming, possible buyout",
+ pricing_details: "LONG",
+ recent_price: 10.01,
+ target_price: 13.00
+ 	)
+Report.create(
+ title: "Dexcom Inc Com",
+ image: "image/Dexcom Inc.jpg",
+ description: "Poised for accelerating penetration across several massive TAMS" ,
+ pricing_details: "LONG",
+ recent_price: 123.33,
+ target_price: 300.00
+ 	)
+Report.create(
+ title: "Horizon Global Corp Com",
+ image: "image/Horizon.jpg",
+ description: "Experiencing expanding margins, trading at less than 5.0 EV/2019 EBITDA",
+ pricing_details: "LONG",
+ recent_price: 14.45,
+ target_price: 30.00
+ 	)
+Report.create(
+ title: "Cheniere Energy Inc.",
+ image: "image/Cheniere.jpg",
+ description: "Upside from continued execution in market with attractive LT dynamics" ,
+ pricing_details: "LONG",
+ recent_price: 54.04,
+ target_price: 80.00
+ 	)
+Report.create(
+ title: "Nexstar Media Group Inc. cl A",
+ image: "image/Nexstar.jpg",
+ description: "Catalysts from upcoming election and renewed private equity interest",
+ pricing_details: "LONG",
+ recent_price: 82.30,
+ target_price: 160.00
+ 	)
+Report.create(
+ title: "B&G Foods Inc",
+ image: "image/B&G.jpg",
+ description: "Historically well-run and in doghouse after a few misses--should be temporary and get paid 6% while waiting",
+ pricing_details: "LONG",
+ recent_price: 32.70,
+ target_price: 45.00
+ 	)

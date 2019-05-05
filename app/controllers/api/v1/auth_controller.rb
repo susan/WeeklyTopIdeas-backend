@@ -4,9 +4,10 @@ class Api::V1::AuthController <ApplicationController
 	def create
       @user = User.find_by(email: login_user_params[:email])
       if @user && @user.authenticate(login_user_params[:password])
+
         @cart_items = cart_items(@user)
         @line_items = line_items(@user)
-        #byebug
+        #debugger
         token = encode_token({ user_id: @user.id })
         render json: { user: @user, line_items: @line_items, cart_items: @cart_items, jwt: token }, status: :accepted
       else
@@ -25,7 +26,7 @@ class Api::V1::AuthController <ApplicationController
     end
 
  def cart_items(user)
-   user.cart.books
+   user.cart.reports
  end
 
  def line_items(user)

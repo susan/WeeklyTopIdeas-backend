@@ -4,14 +4,12 @@ Rails.application.routes.draw do
   	namespace :v1 do
   		resources :carts
       resources :line_items
-      resources :books
-  		post "/users", to: "users#create"
+      resources :reports
+      post "/users", to: "users#create"
   		post "/login", to: "auth#create"
       get '/curr_user', to: "auth#show"
   	end
   end
-
-    root to: "home#index"
 
 end
 
