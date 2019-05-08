@@ -23,7 +23,7 @@ class Api::V1::ProductsController < ApplicationController
    def create_line_item(product, user)
 
     @cart = Cart.find_by(:user_id => user.id)
-    @line_item = LineItem.create(report_id: product.id, cart_id: @cart.id)
+    @line_item = LineItem.create(product_id: product.id, cart_id: @cart.id)
    end
 
 private
