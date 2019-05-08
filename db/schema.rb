@@ -24,21 +24,21 @@ ActiveRecord::Schema.define(version: 2019_05_04_174846) do
 
   create_table "line_items", force: :cascade do |t|
     t.integer "quantity"
-    t.bigint "report_id"
+    t.bigint "product_id"
     t.bigint "cart_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["cart_id"], name: "index_line_items_on_cart_id"
-    t.index ["report_id"], name: "index_line_items_on_report_id"
+    t.index ["product_id"], name: "index_line_items_on_product_id"
   end
 
-  create_table "reports", force: :cascade do |t|
-    t.string "title"
+  create_table "products", force: :cascade do |t|
+    t.string "name"
     t.string "image"
     t.string "description"
-    t.string "pricing_details"
-    t.float "recent_price"
-    t.float "target_price"
+    t.string "size"
+    t.string "item_code"
+    t.float "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -52,5 +52,5 @@ ActiveRecord::Schema.define(version: 2019_05_04_174846) do
 
   add_foreign_key "carts", "users"
   add_foreign_key "line_items", "carts"
-  add_foreign_key "line_items", "reports"
+  add_foreign_key "line_items", "products"
 end

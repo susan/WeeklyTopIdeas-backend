@@ -26,7 +26,7 @@ class Api::V1::AuthController <ApplicationController
     end
 
  def cart_items(user)
-   user.cart.reports
+   user.cart.products
  end
 
  def line_items(user)

@@ -15,7 +15,7 @@ class Api::V1::LineItemsController < ApplicationController
 
 	private
   def line_item_params
-  	 params.require(:line_item).permit(:id, :quantity, :report_id, :cart_id)
+  	 params.require(:line_item).permit(:id, :quantity, :product_id, :cart_id)
   end
 
 end

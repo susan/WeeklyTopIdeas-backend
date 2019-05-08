@@ -8,97 +8,124 @@
 
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
-Report.destroy_all
+Product.destroy_all
 
-Report.create(
-title: "Bluelinx Holdings Inc com",
-image: "https://pbs.twimg.com/media/DYGffj9WsAAcNIt.jpg",
-description: "Selling by legacy PE owner means opportunity to buy with 100% upside.",
-pricing_details: "LONG",
-recent_price: 15.79,
-target_price: 20.00
+Product.create(
+name: "Colgate Total Advanced Fresh + Whitening Toothpaste Gel Fresh",
+image: "https://pics.drugstore.com/prodimg/395372/100.jpg",
+description: "Aids in the prevention of cavities",
+size: "5.8 oz",
+item_code: "541350",
+price: 3.99
 	)
 
-Report.create(
-title: "Charter Communications Inc A",
-image: "https://pbs.twimg.com/media/DOS9JWwUEAA7cIL.jpg",
-description: "Misunderstanding of profit drivers creates big opportunity to buy at attractive price",
-pricing_details: "LONG",
-recent_price: 341.20,
-target_price: 540.00
+Product.create(
+name: "Herbal Essences Color Me Happy Color-Safe Shampoo Rose",
+image: "https://pics.drugstore.com/prodimg/389606/3_100.jpg",
+description: "Supports Vibrant Color, Gentle Lather, & Shine",
+size: "10.1 oz",
+item_code: "413787",
+price: 3.99
 	)
 
-Report.create(
- title: "Viad Corp",
- image: "https://pbs.twimg.com/media/DO2tHB9WkAAwtin.jpg",
- description: "Viad is a combination of of two unrelated units with 100% upside within 2 years" ,
- pricing_details: "LONG",
- recent_price: 55.95,
- target_price: 110.00
+Product.create(
+ name: "Dove Go Fresh Body Wash Cucumber and Green Tea",
+ image: "https://pics.drugstore.com/prodimg/72731/100.jpg",
+ description: "Dove go fresh Cucumber and Green Tea Scent Body Wash gives you softer, smoother skin after just one shower" ,
+ size: "22 oz",
+ item_code: "702195",
+ price: 5.99
  	)
 
-Report.create(
- title: "On the Beach Group plc",
- image: "https://pbs.twimg.com/media/DP-CVYGXkAYo6YB.jpg",
- description: "Operating in a growing market against inefficicent competitors",
- pricing_details: "LONG",
- recent_price: 386.00,
- target_price: 550.00
+Product.create(
+ name: "Lubriderm Daily Moisture Lotion Shea + Relaxing Lavender Jasmine",
+ image: "https://pics.drugstore.com/prodimg/390694/100.jpg",
+ description: "Nourish dry skin and leave it smelling as good as it feels with Lubriderm Daily Moisture Lotion, Shea + Calming Lavender Jasmine",
+ size: "16 oz",
+ item_code: "457496",
+ price: 6.46
  	)
 
-Report.create(
- title: "Tesaro Inc Com",
- image: "https://pbs.twimg.com/media/Dtf46b2UwAAzJa_.jpg",
- description: "Trading at 45% discount to conservatively arrived at Takeout Value",
- pricing_details: "LONG",
- recent_price: 43.01,
- target_price: 75.00
+Product.create(
+ name: "Irish Spring Deodorant Soap Bars Original",
+ image: "https://pics.drugstore.com/prodimg/25922/155.jpg",
+ description: "Helps keep you feeling clean & fresh",
+ size: "3 oz",
+ item_code: "151925",
+ price: 2.99
  	)
-Report.create(
- title: "Liberty Tax Inc",
- image: "https://pbs.twimg.com/media/DtHr3jQXoAE49Mg.jpg",
- description: "Re-listing coming, possible buyout",
- pricing_details: "LONG",
- recent_price: 10.01,
- target_price: 13.00
+Product.create(
+ name: "Skintimate Skin Therapy Moisturizing Shave Gel",
+ image: "https://pics.drugstore.com/prodimg/553398/100.jpg",
+ description: "Replenishes skin's natural moisture",
+ size: "4.5 oz",
+ item_code: "374985",
+ price: 3.29
  	)
-Report.create(
- title: "Dexcom Inc Com",
- image: "https://pbs.twimg.com/media/Dj77OqsX0AAt95P.jpg",
- description: "Poised for accelerating penetration across several massive TAMS" ,
- pricing_details: "LONG",
- recent_price: 123.33,
- target_price: 300.00
+Product.create(
+ name: "Revlon Colorstay Full Cover Foundation, Medium Beige",
+ image: "https://pics.drugstore.com/prodimg/605691/155.jpg",
+ description: "Silky formula glides onto skin to prevent a heavy, cakey-look" ,
+ size: "1.0 oz",
+ item_code: "124721",
+ price: 13.99
  	)
-Report.create(
- title: "Horizon Global Corp Com",
- image: "https://pbs.twimg.com/media/DRqJ4TBU8AAJmfu.jpg",
- description: "Experiencing expanding margins, trading at less than 5.0 EV/2019 EBITDA",
- pricing_details: "LONG",
- recent_price: 14.45,
- target_price: 30.00
+Product.create(
+ name: "Revlon Ultra HD Lip Mousse Hyper Matte, 100 Degrees",
+ image: "https://pics.drugstore.com/prodimg/610630/100.jpg",
+ description: "New Revlon Ultra HD Matte Lip Mousse Hyper Matte, pigment packed, creamy formula that glides on smooth for hours of comfortable hyper matte wear",
+ size: "0.2 oz",
+ item_code: "1031675",
+ price: 9.99
  	)
-Report.create(
- title: "Cheniere Energy Inc.",
- image: "https://pbs.twimg.com/media/DYG1f2oW0AAbL5G.jpg",
- description: "Upside from continued execution in market with attractive LT dynamics" ,
- pricing_details: "LONG",
- recent_price: 54.04,
- target_price: 80.00
+Product.create(
+ name: "Almay Clear Complexion Pressed Powder, Light / Medium",
+ image: "https://pics.drugstore.com/prodimg/149467/155.jpg",
+ description: "Hypoallergenic, won't clog pores" ,
+ size: "0.28 oz",
+ item_code: "600979",
+ price: 13.99
  	)
-Report.create(
- title: "Nexstar Media Group Inc. cl A",
+Product.create(
+ name: "Almay One Coat Multi-Benefit Mascara, Blackest Black NWP",
  image: "https://pbs.twimg.com/media/DlsBeGqWwAATGUb.jpg",
- description: "Catalysts from upcoming election and renewed private equity interest",
- pricing_details: "LONG",
- recent_price: 82.30,
- target_price: 160.00
+ description: "Builds the ultimate lash look with volume, length, and definition while conditioning lashes",
+ size: "0.24 oz",
+ item_code: "928052",
+ price: 8.79
  	)
-Report.create(
- title: "B&G Foods Inc",
- image: "https://pbs.twimg.com/media/DNuAgAYW0AAXsWv.jpg",
- description: "Historically well-run and in doghouse after a few misses--should be temporary and get paid 6% while waiting",
- pricing_details: "LONG",
- recent_price: 32.70,
- target_price: 45.00
+Product.create(
+ name: "Maybelline Fit Me Blush, Pink",
+ image: "https://pics.drugstore.com/prodimg/598036/155.jpg",
+ description: "Now Fit happens with a flattering natural yet noticeable blush",
+ size: "0.16 oz",
+ item_code: "985197",
+ price: 5.99
  	)
+
+Product.create(
+ name: "Neutrogena Oil-Free Eye Makeup Remover",
+ image: "https://pics.drugstore.com/prodimg/87231/100.jpg",
+ description: "Effectively and gently helps remove eye makeup",
+ size: "0.16 oz",
+ item_code: "696121",
+ price: 6.99
+ 	)
+
+Product.create(
+ name: "Neutrogena Makeup Remover Cleansing Towelettes Refill Pack",
+ image: "https://pics.drugstore.com/prodimg/88720/100.jpg",
+ description: "Remove makeup in one easy step with Neutrogena Makeup Remover Cleansing Towelettes",
+ size: "25 each",
+ item_code: "693506",
+ price: 6.99
+ 	)
+
+Product.create(
+ name: "Maybelline Instant Age Rewind Eraser Dark Circles Treatment Concealer, Brightener",
+ image: "https://pics.drugstore.com/prodimg/384763/3_100.jpg",
+ description: "This fragrance-free liquid under eye concealer is also formulated with goji berry extracts and Haloxyl, which is an active ingredient designed to combat the look of dark circles for a more radiant eye contour area",
+ size: "0.2 oz",
+ item_code: "438899",
+ price: 8.49
+  )

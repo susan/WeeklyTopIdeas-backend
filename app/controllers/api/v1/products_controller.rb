@@ -1,8 +1,8 @@
-class Api::V1::ProductsController < ApplicationController
+class Api::V1::ReportsController < ApplicationController
   before_action :curr_user, only: [:create]
 
   def index
-    @products = Product.all
+    @reports = Product.all
     render json: @reports, status: :ok
   end
 
@@ -28,7 +28,7 @@ class Api::V1::ProductsController < ApplicationController
 
 private
   def report_params
-  	 params.require(:product).permit(:id, :name, :image, :description, :shipping_weight, :recent_price, :price)
+  	 params.require(:product).permit(:id, :name, :image, :description, :size, :item_code, :price)
   end
 
 end
