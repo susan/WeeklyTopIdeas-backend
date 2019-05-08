@@ -1,4 +1,4 @@
-class Api::V1::ReportsController < ApplicationController
+class Api::V1::ProductsController < ApplicationController
   before_action :curr_user, only: [:create]
 
   def index
