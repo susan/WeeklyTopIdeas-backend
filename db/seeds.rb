@@ -88,7 +88,7 @@ Product.create(
  	)
 Product.create(
  name: "Almay One Coat Multi-Benefit Mascara, Blackest Black NWP",
- image: "https://pbs.twimg.com/media/DlsBeGqWwAATGUb.jpg",
+ image: "https://pics.drugstore.com/prodimg/571478/155.jpg",
  description: "Builds the ultimate lash look with volume, length, and definition while conditioning lashes",
  size: "0.24 oz",
  item_code: "928052",
